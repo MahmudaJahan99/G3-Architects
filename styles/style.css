@@ -21,6 +21,27 @@ body {
     display: flex;
 }
 
+.flex-col-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*----- Fonts -----*/
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.81rem;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 1rem;
+}
+
 /*----- Colors -----*/
 .dark1 {
     color: #131313;
@@ -30,6 +51,20 @@ body {
     color: #424242;
 }
 
+.dark3 {
+    color: #727272;
+}
+
+/*----- Buttons -----*/
+.primary-btn {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 1.25rem 1.55rem;
+    border: none;
+}
 
 /*==================== HEADER ====================*/
 header {
@@ -41,11 +76,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
-}
-
-#navbar #logo {
-    font-size: 2.81;
-    font-weight: 700;
 }
 
 #navbar ul {
@@ -60,4 +90,22 @@ header {
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
+}
+
+/*========== Banner ==========*/
+.banner .banner-desc {
+    width: 80%;
+    margin: auto;
+    padding: 2.81rem 0;
+}
+
+.banner .banner-desc h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.banner img {
+    border-radius: 8px;
+    width: 100%;
 }
