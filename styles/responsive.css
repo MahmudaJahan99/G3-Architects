@@ -111,6 +111,22 @@
     #features .btn-container h6 {
         font-size: 1.8rem;
     }
+
+    /*========== Facts ==========*/
+    #facts .facts-desc {
+        width: 100%;
+    }
+
+    #facts .facts-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    #facts .card-item {
+        padding: 1.2rem;
+        gap: 0.5rem;
+        text-align: center;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -200,6 +216,23 @@
         padding: 1.5rem;
     }
 
+    /*========== Facts ==========*/
+    #facts .facts-desc {
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    #facts .facts-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    #facts .card-item {
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -217,6 +250,19 @@
     /*==== Cards =====*/
     .features-cards .card-item {
         padding: 1.5rem;
+    }
+
+    /*========== Facts ==========*/
+    #facts .facts-desc {
+        width: 80%;
+    }
+
+    #facts .facts-cards {
+        gap: 3rem;
+    }
+
+    #facts .card-item {
+        padding: 1.05rem;
     }
 }
 
@@ -267,5 +313,10 @@
     #navbar ul li a {
         font-size: 2.2rem;
         font-weight: 700;
+    }
+
+    /*========== Facts ==========*/
+    #facts .card-item {
+        padding: 2rem;
     }
 }
