@@ -1,18 +1,28 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
+
     /*==================== GLOBAL STYLES ====================*/
     .m-5 {
         margin-top: 2rem !important;
         margin-bottom: 2rem !important;
     }
 
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
     .flex-col-center {
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     /*----- Fonts -----*/
     .title {
         font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 
     .para {
@@ -24,6 +34,7 @@
         font-size: 1rem;
         padding: 1.05rem 1.25rem;
     }
+
 
     /*==================== HEADER ====================*/
     /*===== Navigation Bar =====*/
@@ -37,14 +48,8 @@
         gap: 1rem;
     }
 
-    #navbar ul li {
-        list-style-type: none;
-    }
-
     #navbar ul li a {
-        text-decoration: none;
-        font-size: 1.125rem;
-        font-weight: 500;
+        font-size: 1rem;
     }
 
     /*========== Banner ==========*/
@@ -53,19 +58,13 @@
     }
 
     .banner .banner-desc {
-        width: 100%;
+        width: 95%;
     }
 
     .banner .banner-desc h1 {
         font-size: 2.25rem;
         line-height: 50px;
         margin-top: 10px;
-    }
-
-    .banner img {
-        border-radius: 8px;
-        width: 100%;
-        padding-top: 2.81rem;
     }
 
     /*========== Features ==========*/
@@ -82,6 +81,36 @@
     #features-heading .img-container {
         gap: 0.8rem;
     }
+
+    /*========== Features Cards ==========*/
+    #features .features-cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #features .features-cards-container .features-content {
+        width: 100%;
+    }
+
+    /*==== Cards =====*/
+    .features-cards .card-item {
+        padding: 1.2rem;
+    }
+
+    /*==== Features Button =====*/
+    .features-cards-container .img-container {
+        position: static;
+    }
+
+    #features .btn-container {
+        position: static;
+        width: fit-content;
+        margin: auto;
+    }
+
+    #features .btn-container h6 {
+        font-size: 1.8rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -91,6 +120,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     /*==================== GLOBAL STYLES ====================*/
     .m-5 {
         margin-top: 3rem !important;
@@ -106,25 +136,88 @@
         font-size: 2.3rem;
     }
 
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
     .para {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /*----- Buttons -----*/
     .primary-btn {
+        font-size: 1.15rem;
+        padding: 1rem 1.25rem;
+    }
+
+
+    /*==================== HEADER ====================*/
+    /*========== Navigation Bar ==========*/
+    #navbar ul {
+        gap: 1.5rem;
+    }
+
+    #navbar ul li a {
         font-size: 1rem;
-        padding: 1.05rem 1.25rem;
     }
 
     /*========== Banner ==========*/
     .banner .banner-desc h1 {
         font-size: 3.25rem;
     }
+
+    /*========== Features ==========*/
+    #features-heading {
+        gap: 1.5rem;
+    }
+
+    #features-heading .img-container {
+        gap: 1rem;
+    }
+
+    /*========== Features Cards ==========*/
+    #features .features-desc {
+        align-items: flex-start;
+    }
+
+    #features .features-cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #features .features-cards-container .features-content {
+        width: 100%;
+    }
+
+    /*==== Cards =====*/
+    .features-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .features-cards .card-item {
+        padding: 1.5rem;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* CSS rules for large devices */
+
+    /*========== Features Cards ==========*/
+    #features .features-cards-container {
+        gap: 3rem;
+    }
+
+    #features .features-cards-container .features-content {
+        width: 50%;
+    }
+
+    /*==== Cards =====*/
+    .features-cards .card-item {
+        padding: 1.5rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -145,11 +238,15 @@
 
     /*----- Fonts -----*/
     .title {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
     }
 
     .para {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
     }
 
     /*----- Buttons -----*/

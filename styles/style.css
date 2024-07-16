@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -41,6 +41,11 @@ body {
 .title {
     font-size: 2.81rem;
     font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .para {
@@ -148,4 +153,46 @@ header {
 
 #features-heading .img-container img {
     width: 100%;
+}
+
+/*========== Features Cards ==========*/
+#features .features-cards-container {
+    flex-direction: row;
+    gap: 5rem;
+}
+
+#features .features-cards-container .features-content {
+    width: 40%;
+}
+
+#features .features-img {
+    width: 100%;
+}
+
+#features .features-cards-container .features-content .features-desc h2 {
+    border-left: 5px solid #FF900E;
+    padding-left: 1.25rem;
+}
+
+/*==== Cards =====*/
+.features-cards .card-item {
+    padding: 1.875rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+/*==== Features Button =====*/
+.features-cards-container .img-container {
+    position: relative;
+}
+
+#features .btn-container {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+}
+
+#features .btn-container h6 {
+    font-size: 2rem;
 }
