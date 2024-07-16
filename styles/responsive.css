@@ -1,35 +1,31 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
-
     /*==================== GLOBAL STYLES ====================*/
-    .container {
-        width: 90%;
-        margin: auto;
+    .m-5 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .flex-col-center {
+        gap: 1.5rem;
     }
 
     /*----- Fonts -----*/
-    .center {
-        text-align: center;
-    }
-
     .title {
-        font-size: 2.81rem;
-        font-weight: 700;
+        font-size: 2rem;
     }
 
-    /*----- Colors -----*/
-    .dark1 {
-        color: #131313;
+    .para {
+        font-size: 0.8rem;
     }
 
-    .dark2 {
-        color: #424242;
+    /*----- Buttons -----*/
+    .primary-btn {
+        font-size: 1rem;
+        padding: 1.05rem 1.25rem;
     }
 
-    .dark3 {
-        color: #727272;
-    }
-
+    /*==================== HEADER ====================*/
     /*===== Navigation Bar =====*/
     #navbar {
         flex-direction: column;
@@ -50,6 +46,42 @@
         font-size: 1.125rem;
         font-weight: 500;
     }
+
+    /*========== Banner ==========*/
+    .banner {
+        padding: 0;
+    }
+
+    .banner .banner-desc {
+        width: 100%;
+    }
+
+    .banner .banner-desc h1 {
+        font-size: 2.25rem;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+    .banner img {
+        border-radius: 8px;
+        width: 100%;
+        padding-top: 2.81rem;
+    }
+
+    /*========== Features ==========*/
+    #features-heading {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    #features-heading .features-desc {
+        align-items: center;
+    }
+
+    #features-heading .img-container {
+        gap: 0.8rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -59,7 +91,35 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    /* CSS rules for medium devices */
+    /*==================== GLOBAL STYLES ====================*/
+    .m-5 {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .flex-col-center {
+        gap: 1.5rem;
+    }
+
+    /*----- Fonts -----*/
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    /*----- Buttons -----*/
+    .primary-btn {
+        font-size: 1rem;
+        padding: 1.05rem 1.25rem;
+    }
+
+    /*========== Banner ==========*/
+    .banner .banner-desc h1 {
+        font-size: 3.25rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -74,6 +134,29 @@
 
 /* XXL devices (very large desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    .m-5 {
+        margin-top: 6rem !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .flex-col-center {
+        gap: 3rem;
+    }
+
+    /*----- Fonts -----*/
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .para {
+        font-size: 1.8rem;
+    }
+
+    /*----- Buttons -----*/
+    .primary-btn {
+        font-size: 1.8rem;
+        padding: 1.55rem 2rem;
+    }
 
     /*========== Navigation Bar ==========*/
     #navbar #logo {

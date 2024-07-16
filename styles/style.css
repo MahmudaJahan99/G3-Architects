@@ -12,6 +12,11 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
+.m-5 {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -40,9 +45,14 @@ body {
 
 .para {
     font-size: 1rem;
+    color: #727272;
 }
 
 /*----- Colors -----*/
+.primary {
+    color: #FF900E;
+}
+
 .dark1 {
     color: #131313;
 }
@@ -93,10 +103,13 @@ header {
 }
 
 /*========== Banner ==========*/
+.banner {
+    padding: 2.81rem 0;
+}
+
 .banner .banner-desc {
     width: 80%;
     margin: auto;
-    padding: 2.81rem 0;
 }
 
 .banner .banner-desc h1 {
@@ -107,5 +120,32 @@ header {
 
 .banner img {
     border-radius: 8px;
+    width: 100%;
+    padding-top: 2.81rem;
+}
+
+/*========== Features ==========*/
+#features-heading {
+    gap: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container,
+.features-desc {
+    flex: 1;
+}
+
+#features-heading .features-desc {
+    align-items: flex-start;
+}
+
+#features-heading .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+#features-heading .img-container img {
     width: 100%;
 }
