@@ -58,6 +58,10 @@ img {
 }
 
 /*----- Colors -----*/
+.bg-primary {
+    background: rgba(255, 144, 14, 0.1);
+}
+
 .primary {
     color: #FF900E;
 }
@@ -86,10 +90,6 @@ img {
 }
 
 /*==================== HEADER ====================*/
-header {
-    background: rgba(255, 144, 14, 0.1);
-}
-
 /*========== Navigation Bar ==========*/
 #navbar {
     justify-content: space-between;
@@ -131,6 +131,9 @@ header {
     padding-top: 2.81rem;
 }
 
+
+
+/*==================== BODY ====================*/
 /*========== Features ==========*/
 #features-heading {
     gap: 4.5rem;
@@ -231,4 +234,13 @@ header {
 
 #sponsors .sponsors-brands img {
     filter: grayscale(100%);
+}
+
+
+
+/*==================== FOOTER ====================*/
+footer .para {
+    width: fit-content;
+    margin: auto;
+    padding: 2.375rem;
 }

@@ -67,6 +67,8 @@
         margin-top: 10px;
     }
 
+
+    /*==================== BODY ====================*/
     /*========== Features ==========*/
     #features-heading {
         flex-direction: column-reverse;
@@ -140,9 +142,16 @@
         gap: 1.5rem;
         margin: 1.5rem auto;
     }
+
     #sponsors .sponsors-brands #figma {
         grid-column: span 2;
         justify-self: center;
+    }
+
+    /*==================== FOOTER ====================*/
+    footer .para {
+        text-align: center;
+        padding: 1.2rem;
     }
 }
 
@@ -194,6 +203,7 @@
         font-size: 3.25rem;
     }
 
+    /*==================== BODY ====================*/
     /*========== Features ==========*/
     #features-heading {
         gap: 1.5rem;
@@ -258,7 +268,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    /*==================== BODY ====================*/
     /*========== Features Cards ==========*/
     #features .features-cards-container {
         gap: 3rem;
@@ -316,6 +326,7 @@
 
 /* XXL devices (very large desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    /*==================== GLOBAL ====================*/
     .m-5 {
         margin-top: 6rem !important;
         margin-bottom: 6rem !important;
@@ -343,7 +354,7 @@
         font-size: 1.8rem;
         padding: 1.55rem 2rem;
     }
-
+    /*==================== HEADER ====================*/
     /*========== Navigation Bar ==========*/
     #navbar #logo {
         font-size: 3.5rem;
@@ -357,7 +368,7 @@
         font-size: 2.2rem;
         font-weight: 700;
     }
-
+    /*==================== BODY ====================*/
     /*========== Facts ==========*/
     #facts .card-item {
         padding: 2rem;
