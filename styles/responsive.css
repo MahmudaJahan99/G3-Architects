@@ -127,11 +127,23 @@
         gap: 0.5rem;
         text-align: center;
     }
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /* CSS rules for small devices */
+    /*========== Sponsors ==========*/
+    #sponsors .sponsors-desc {
+        width: 100%;
+    }
+
+    #sponsors .sponsors-brands {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    #sponsors .sponsors-brands #figma {
+        grid-column: span 2;
+        justify-self: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -233,6 +245,15 @@
         text-align: center;
     }
 
+    /*========== Sponsors ==========*/
+    #sponsors .sponsors-desc {
+        width: 100%;
+    }
+
+    #sponsors .sponsors-brands {
+        gap: 2rem;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -263,6 +284,28 @@
 
     #facts .card-item {
         padding: 1.05rem;
+    }
+
+    /*========== Facts ==========*/
+    #facts .facts-desc {
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #facts .facts-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    /*========== Sponsors ==========*/
+    #sponsors .sponsors-desc {
+        width: 80%;
+    }
+
+    #sponsors .sponsors-brands {
+        gap: 2.5rem;
     }
 }
 

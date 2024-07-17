@@ -12,6 +12,10 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .m-5 {
     margin-top: 5rem !important;
     margin-bottom: 5rem !important;
@@ -124,8 +128,6 @@ header {
 }
 
 .banner img {
-    border-radius: 8px;
-    width: 100%;
     padding-top: 2.81rem;
 }
 
@@ -136,8 +138,8 @@ header {
     justify-content: space-between;
 }
 
-.img-container,
-.features-desc {
+#features-heading .img-container,
+#features-heading .features-desc {
     flex: 1;
 }
 
@@ -151,10 +153,6 @@ header {
     gap: 1.5rem;
 }
 
-#features-heading .img-container img {
-    width: 100%;
-}
-
 /*========== Features Cards ==========*/
 #features .features-cards-container {
     flex-direction: row;
@@ -163,10 +161,6 @@ header {
 
 #features .features-cards-container .features-content {
     width: 40%;
-}
-
-#features .features-img {
-    width: 100%;
 }
 
 #features .features-cards-container .features-content .features-desc h2 {
@@ -220,4 +214,21 @@ header {
     gap: 0.8rem;
     border: 1px solid rgb(255, 144, 14);
     border-radius: 8px;
+}
+
+
+/*========== Sponsors ==========*/
+#sponsors .sponsors-desc {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+   
+#sponsors .sponsors-brands {
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+#sponsors .sponsors-brands img {
+    filter: grayscale(100%);
 }
